@@ -3,6 +3,8 @@
 Renders one 1024x1024 invented passport spread (open book: data page left,
 visa/stamp page right) with PIL. Deterministic, offline, stdlib + PIL only.
 Usage: python3 gen_passport.py <variant> <out.png>
+
+Winner of the local 5-candidate tournament: v1-kestrelia (see tournament.md).
 """
 import math
 import os
@@ -447,7 +449,7 @@ def render(variant, out_path):
     return out_path
 
 
-WINNER = "v1-kestrelia"
+WINNER = "v1-kestrelia"  # tournament winner; the program always renders this one
 
 
 if __name__ == "__main__":
